@@ -20,12 +20,13 @@
 	<body style="background-color: #f1f2f6;">
 		<div class="docs-header">
 			<?php include "nav.php"; ?>
+			<?php if (isset($header)) { ?>
 			<!--header-->
 			<div class="topic">
 				<div class="container">
 					<div class="col-md-8">
-						<h3>Smart Refrigerator</h3>
-						<h4>ตู้เย็นช่วยเตือนคุณภาพอาหาร</h4>
+						<?php if (isset($header['title'])) echo "<h3>$header[title]</h3>"; ?>
+						<?php if (isset($header['subtitle'])) echo "<h4>$header[subtitle]</h4>"; ?>
 					</div>
 					<div class="col-md-4"></div>
 				</div>
@@ -35,4 +36,5 @@
 					</div>
 				</div> -->
 			</div>
+			<?php } ?>
 		</div>

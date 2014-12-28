@@ -1,8 +1,7 @@
 <?php
 	require_once('autoload.php');
 
-	$header['title'] = "Smart Refrigerator";
-	$header['subtitle'] = "ตู้เย็นช่วยเตือนคุณภาพอาหาร";
+	$header['title'] = "ใกล้หมดอายุ";
 	include template_folder . "/header.php";
 	# จำนวนสินค้าทั้งหมดในตู้เย็น
 	$sql = "SELECT COUNT( product_barcode ) AS count FROM products";
