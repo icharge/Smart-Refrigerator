@@ -10,6 +10,7 @@
 		<link rel="bookmark" href="favicon_16.ico"/>
 		<!-- site css -->
 		<link rel="stylesheet" href="css/site.min.css">
+		<link rel="stylesheet" href="css/jquery.dataTables.css">
 		<link rel="stylesheet" href="css/style.css">
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
 		<!--[if lt IE 9]>
@@ -19,7 +20,7 @@
 	</head>
 	<body style="background-color: #f1f2f6;">
 		<div class="docs-header">
-			<?php include "nav.php"; ?>
+			<?php include "t_nav.php"; ?>
 			<?php if (isset($header)) { ?>
 			<!--header-->
 			<div class="topic">

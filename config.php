@@ -7,4 +7,4 @@
 
 // Program
 	define("template_folder","template");
-	define("expire_day_notify","5");
+	define("expire_day_notify","10");
