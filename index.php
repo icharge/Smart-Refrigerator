@@ -1,0 +1,28 @@
+<?php
+	require_once('autoload.php');
+
+	include template_folder . "/header.php";
+	# จำนวนสินค้าทั้งหมดในตู้เย็น
+	$sql = "SELECT COUNT( product_barcode ) AS count FROM products";
+	$allprdcount = $db->query_row($sql);
+	$allprdcount = $allprdcount['count'];
+
+	# จำนวนสินค้าที่ใกล้หมดอายุ
+	$sql = "SELECT COUNT( expire_date ) as count
+					FROM slot_detail
+					WHERE datediff(expire_date,now()) < ".expire_day_notify;
+	$expiringcount = $db->query_row($sql);
+	$expiringcount = $expiringcount['count'];
+
+
+	include template_folder . "/main.php";
+	include template_folder . "/footer.php";
+
+
+	/* Notification
+	$sql = "SELECT slot_barcode, product_barcode, expire_date, 
+					datediff(expire_date,now()) as countexpire
+					FROM slot_detail
+					WHERE datediff(expire_date,now()) < ".expire_day_notify;
+	$data = $db->query($sql);
+	var_dump($data); */
