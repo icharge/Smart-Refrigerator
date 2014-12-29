@@ -16,7 +16,7 @@
 								<tr>
 									<th style="white-space: nowrap;" style="width: 68px"><i class="glyphicon glyphicon-barcode"></i> สินค้า</th>
 									<th style="white-space: nowrap;">ชื่อสินค้า</th>
-									<th style="white-space: nowrap;">น้ำหนักสุทธิ</th>
+									<th style="white-space: nowrap;">ปริมาณสุทธิ</th>
 								</tr>
 							</thead>
 							<tbody>

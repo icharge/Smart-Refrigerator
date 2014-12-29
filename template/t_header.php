@@ -5,6 +5,7 @@
 		<title>Smart Refrigerator</title>
 		<!-- Sets initial viewport load and disables zooming  -->
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
 		<!-- SmartAddon.com Verification -->
 		<link rel="shortcut icon" href="favicon_16.ico"/>
 		<link rel="bookmark" href="favicon_16.ico"/>
