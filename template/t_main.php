@@ -9,8 +9,7 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="btn-group-vertical" style="display: block">
-					<a href="addproduct.php" class="btn btn-default btn-block"><i class="glyphicon glyphicon-plus"></i> เพิ่มสินค้าใหม่</a>
-					<a href="additem.php" class="btn btn-default btn-block"><i class="glyphicon glyphicon glyphicon-log-in"></i> นำของเข้าตู้</a>
+					<a href="products.php?add" class="btn btn-default btn-block"><i class="glyphicon glyphicon-plus"></i> เพิ่มสินค้าใหม่</a>
 				</div>
 			</div>
 		</div>

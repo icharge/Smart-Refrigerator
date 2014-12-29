@@ -1,5 +1,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	
 	<script type="text/javascript" src="js/site.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tap.js"></script>
 
 <?php
 	if (isset($loadscript)) {

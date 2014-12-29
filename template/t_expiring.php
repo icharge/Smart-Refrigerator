@@ -9,7 +9,7 @@
 			<div class="col-sm-6">
 				<div class="panel panel-danger">
 					<div class="panel-heading">รายการของใกล้หมดอายุ</div>
-						<table id="newtable" class="table table-hover table-condensed dataTable" stryle="font-size: 12px">
+						<table id="newtable" class="table table-hover" stryle="font-size: 12px">
 							<thead>
 								<tr>
 									<th style="white-space: nowrap;"><i class="glyphicon glyphicon-barcode"></i> ตำแหน่ง</th>
