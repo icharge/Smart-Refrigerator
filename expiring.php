@@ -9,7 +9,7 @@ datediff(expire_date,now()) as countexpire
 FROM slot_detail sd
 LEFT JOIN slots s on s.slot_barcode = sd.slot_barcode
 LEFT JOIN products p on p.product_barcode = sd.product_barcode
-WHERE datediff(expire_date,now()) < ".expire_day_notify."
+WHERE datediff(expire_date,now()) <= ".expire_day_notify."
 ORDER BY datediff(expire_date,now()) asc";
 	$expiringdata = $db->query($sql);
 

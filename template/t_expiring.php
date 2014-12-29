@@ -21,7 +21,8 @@
 							<tbody>
 <?php
 	foreach ($expiringdata as $row) {
-		echo "<tr>
+		$colornoti = expirewarningcolor($row['expire_date']);
+		echo "<tr style='$colornoti'>
 			<td>$row[slot_barcode]</td>
 			<td class='hidden-xs'>$row[product_barcode]</td>
 			<td>$row[name]</td>
