@@ -4,7 +4,7 @@
 			<div class="col-sm-6">
 				<div class="list-group">
 					<a href="expiring.php" class="list-group-item"><span class="badge badge-danger"><?php echo $expiringcount; ?></span>ของใกล้หมดอายุ</a>
-					<a href="products.php" class="list-group-item"><span class="badge badge-primary"><?php echo $allprdcount; ?></span>ของทั้งหมดในตู้เย็น</a>
+					<a href="inrefrig.php" class="list-group-item"><span class="badge badge-primary"><?php echo $allprdcount; ?></span>ของทั้งหมดในตู้เย็น</a>
 				</div>
 			</div>
 			<div class="col-sm-6">

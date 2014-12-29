@@ -13,7 +13,7 @@
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a class="nav-link current" href="index.php">หน้าแรก</a></li>
-				<li><a class="nav-link" href="products.html">สินค้าทั้งหมด</a></li>
+				<li><a class="nav-link" href="products.php">สินค้าทั้งหมด</a></li>
 				<li><a class="nav-link" href="slots.html">ช่องวางของ</a></li>
 				<li><a class="nav-link" href="refrigerator.html">ภาพจำลองตู้เย็น</a></li>
 			</ul>
