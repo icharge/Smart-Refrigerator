@@ -6,6 +6,9 @@
 	cursor: pointer;
 }
 
+/********************************\
+|* --- Refrigenator Fresh box ---|
+\********************************/
 table .card .title {
 	display: inline-block;
 	/*min-width: 30%;*/
@@ -16,4 +19,101 @@ table .card .title {
 table .card .expire {
 	display: block;
 	float: right;
+}
+
+.refrige {
+	position: relative;
+}
+
+.refrige table {
+	width: 100%;
+	border: solid 2px #000;
+}
+
+.refrige .eggs {
+	height: 40px;
+}
+
+.refrige .milk-200 {
+	height: 30px;
+}
+
+.refrige .milk-400 {
+	height: 20px;
+}
+
+.refrige .softdrink {
+	height: 100px;
+}
+
+.refrige .milk-830 {
+	height: 20px;
+}
+
+.refrige .water-600 {
+	height: 120px;
+}
+
+.refrige table td {
+	border: solid 2px #000;
+	padding: 3px;
+	vertical-align: top;
+}
+
+.refrige .clearrow td {
+	border: 0;
+	height: 20px;
+}
+
+.refrige .overlay {
+	width: 100%;
+	display: block;
+	position: absolute;
+	text-align: center;
+	font-weight: 400;
+	color: #000;
+	text-shadow: 0px 0px 8px #676767;
+}
+
+.refrige .overlay.eggs-a {
+	top: 1rem;
+	font-size: 1.6rem;
+}
+
+.refrige .overlay.eggs-b {
+	top: 7rem;
+	font-size: 1.6rem;
+}
+
+.refrige .overlay.milk-200 {
+	top: 13.5rem;
+	font-size: 1.6rem;
+	width: 60%;
+	right: 0;
+}
+
+.refrige .overlay.milk-400 {
+	width: 40%;
+	top: 13em;
+	font-size: 1.6rem;
+}
+
+.refrige .overlay.softdrink {
+	width: 60%;
+	top: 14.4em;
+	right: 0;
+	font-size: 1.6rem;
+}
+
+.refrige .overlay.milk-830 {
+	width: 40%;
+	top: 23.2em;
+	font-size: 1.6rem;
+}
+
+.refrige .overlay.water-600 {
+	width: 60%;
+	top: 23.8em;
+	right: 0;
+	font-size: 1.6rem;
 }

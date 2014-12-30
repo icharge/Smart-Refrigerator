@@ -3,7 +3,50 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="jumbotron">
-					<div class="jumbotron-photo"><img src="img/refrigerator.png"></div>
+					<div class="refrige">
+						<table class="">
+							<tr class="eggs">
+								<td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr class="clearrow">
+								<td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr class="eggs">
+								<td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr class="clearrow">
+								<td rowspan="2"></td><td rowspan="2"></td><td></td><td></td><td></td>
+							</tr>
+							<tr class="milk-200">
+								<td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
+							</tr>
+							<tr class="milk-400">
+								<td rowspan="3"></td><td rowspan="3"></td>
+							</tr>
+							<tr class="clearrow">
+								<td></td><td></td><td></td>
+							</tr>
+							<tr class="softdrink">
+								<td></td><td></td><td></td>
+							</tr>
+							<tr class="clearrow">
+								<td></td><td></td><td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
+							</tr>
+							<tr class="milk-830">
+								<td rowspan="2"></td><td rowspan="2"></td>
+							</tr>
+							<tr class="water-600">
+								<td></td><td></td><td></td>
+							</tr>
+						</table>
+						<div class="overlay eggs-a">Eggs A</div>
+						<div class="overlay eggs-b">Eggs B</div>
+						<div class="overlay milk-200">Milk 200 ml.</div>
+						<div class="overlay milk-400">Milk 400 ml.</div>
+						<div class="overlay softdrink">Soft Drink 325 ml.</div>
+						<div class="overlay milk-830">Milk 830 ml.</div>
+						<div class="overlay water-600">Water 600 ml.</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-6">
