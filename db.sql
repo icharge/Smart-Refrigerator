@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 29, 2014 at 06:40 AM
+-- Generation Time: Dec 30, 2014 at 03:52 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -37,6 +37,8 @@ CREATE TABLE IF NOT EXISTS `products` (
 --
 
 INSERT INTO `products` (`product_barcode`, `name`, `netcontent`) VALUES
+('1234567890123', 'Test Product', '123 ml'),
+('1234567890124', 'Test Product 2', '123 ml'),
 ('2000000355429', 'Big C ไข่ไก่เบอร์ 2', '10 Pcs'),
 ('8850188242103', 'Foremost UHT รสจืด', '180 ml'),
 ('8850188250207', 'Foremost UHT รสหวาน', '225 ml'),
@@ -60,13 +62,37 @@ CREATE TABLE IF NOT EXISTS `slots` (
 --
 
 INSERT INTO `slots` (`slot_barcode`, `slot_name`) VALUES
-('EGGS01', 'Eggs 1'),
-('EGGS02', 'Eggs 2'),
-('MILK01', 'Milk 1'),
-('MILK02', 'Milk 2'),
-('MILK03', 'Milk 3'),
-('SOFTDRK01', 'Soft Drink'),
-('WATER01', 'Water 1');
+('EGGS01', 'Eggs A1'),
+('EGGS02', 'Eggs A2'),
+('EGGS03', 'Eggs A3'),
+('EGGS04', 'Eggs A4'),
+('EGGS05', 'Eggs A5'),
+('EGGS06', 'Eggs B1'),
+('EGGS07', 'Eggs B2'),
+('EGGS08', 'Eggs B3'),
+('EGGS09', 'Eggs B4'),
+('EGGS10', 'Eggs B5'),
+('FREEZER', 'Freeze'),
+('MEAT', 'Meat'),
+('MILK01', 'Milk A1'),
+('MILK02', 'Milk A2'),
+('MILK03', 'Milk A3'),
+('MILK04', 'Milk B1'),
+('MILK05', 'Milk B2'),
+('MILK06', 'Milk B3'),
+('MILK07', 'Milk C1'),
+('MILK08', 'Milk C2'),
+('MILK09', 'Milk C3'),
+('OTHER1', 'Other 1'),
+('OTHER2', 'Other 2'),
+('OTHER3', 'Other 3'),
+('SOFTDRK01', 'Soft Drink 1'),
+('SOFTDRK02', 'Soft Drink 2'),
+('SOFTDRK03', 'Soft Drink 3'),
+('VEGETABLE', 'Vegetable'),
+('WATER01', 'Water 1'),
+('WATER02', 'Water 2'),
+('WATER03', 'Water 3');
 
 -- --------------------------------------------------------
 

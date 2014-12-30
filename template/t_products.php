@@ -11,7 +11,7 @@
 			<div class="col-sm-12">
 				<div class="panel panel-primary">
 					<div class="panel-heading">รายการของในตู้เย็น</div>
-						<table id="newtable" class="table table-hover" stryle="font-size: 12px">
+						<table id="newtable" class="table table-hover rowclick" stryle="font-size: 12px">
 							<thead>
 								<tr>
 									<th style="white-space: nowrap;" style="width: 68px"><i class="glyphicon glyphicon-barcode"></i> สินค้า</th>
