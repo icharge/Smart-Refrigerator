@@ -2,51 +2,60 @@
 	<div class="container documents">
 		<div class="row">
 			<div class="col-sm-6">
+				<!-- ส่วนหุ้ม ตู้เย็น -->
 				<div class="jumbotron">
-					<div class="refrige">
-						<table class="">
-							<tr class="eggs">
-								<td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr class="clearrow">
-								<td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr class="eggs">
-								<td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr class="clearrow">
-								<td rowspan="2"></td><td rowspan="2"></td><td></td><td></td><td></td>
-							</tr>
-							<tr class="milk-200">
-								<td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
-							</tr>
-							<tr class="milk-400">
-								<td rowspan="3"></td><td rowspan="3"></td>
-							</tr>
-							<tr class="clearrow">
-								<td></td><td></td><td></td>
-							</tr>
-							<tr class="softdrink">
-								<td></td><td></td><td></td>
-							</tr>
-							<tr class="clearrow">
-								<td></td><td></td><td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
-							</tr>
-							<tr class="milk-830">
-								<td rowspan="2"></td><td rowspan="2"></td>
-							</tr>
-							<tr class="water-600">
-								<td></td><td></td><td></td>
-							</tr>
-						</table>
-						<div class="overlay eggs-a">Eggs A</div>
-						<div class="overlay eggs-b">Eggs B</div>
-						<div class="overlay milk-200">Milk 200 ml.</div>
-						<div class="overlay milk-400">Milk 400 ml.</div>
-						<div class="overlay softdrink">Soft Drink 325 ml.</div>
-						<div class="overlay milk-830">Milk 830 ml.</div>
-						<div class="overlay water-600">Water 600 ml.</div>
+					<!-- ฝั่งซ้าย -->
+					<div class="col-xs-6">
+						
 					</div>
+					<!-- ฝั่งขวา -->
+					<div class="col-xs-6" style="padding-right: 0">
+						<div class="refrige">
+							<table>
+								<tr class="eggs">
+									<td class="active"></td><td></td><td></td><td></td><td></td>
+								</tr>
+								<tr class="clearrow">
+									<td></td><td></td><td></td><td></td><td></td>
+								</tr>
+								<tr class="eggs">
+									<td></td><td></td><td></td><td></td><td></td>
+								</tr>
+								<tr class="clearrow">
+									<td rowspan="2"></td><td rowspan="2"></td><td></td><td></td><td></td>
+								</tr>
+								<tr class="milk-200">
+									<td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
+								</tr>
+								<tr class="milk-400">
+									<td rowspan="3"></td><td rowspan="3"></td>
+								</tr>
+								<tr class="clearrow">
+									<td></td><td></td><td></td>
+								</tr>
+								<tr class="softdrink">
+									<td></td><td></td><td></td>
+								</tr>
+								<tr class="clearrow">
+									<td></td><td></td><td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
+								</tr>
+								<tr class="milk-830">
+									<td rowspan="2"></td><td rowspan="2"></td>
+								</tr>
+								<tr class="water-600">
+									<td></td><td></td><td></td>
+								</tr>
+							</table>
+							<div class="overlay eggs-a">Eggs A</div>
+							<div class="overlay eggs-b">Eggs B</div>
+							<div class="overlay milk-200">Milk 200 ml.</div>
+							<div class="overlay milk-400">Milk 400 ml.</div>
+							<div class="overlay softdrink">Soft Drink 325 ml.</div>
+							<div class="overlay milk-830">Milk 830 ml.</div>
+							<div class="overlay water-600">Water 600 ml.</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 			<div class="col-sm-6">

@@ -27,42 +27,65 @@ table .card .expire {
 
 .refrige table {
 	width: 100%;
-	border: solid 2px #000;
+	border: solid 2px #A0A0A0;
+	cursor: default;
 }
 
-.refrige .eggs {
-	height: 40px;
+.refrige .clearrow td {
+	height: 1.5rem;
+	border-left: 0!important;
+	border-right: 0!important;
 }
 
-.refrige .milk-200 {
-	height: 30px;
-}
-
-.refrige .milk-400 {
-	height: 20px;
-}
-
-.refrige .softdrink {
-	height: 100px;
-}
-
-.refrige .milk-830 {
-	height: 20px;
-}
-
-.refrige .water-600 {
-	height: 120px;
-}
-
-.refrige table td {
-	border: solid 2px #000;
+.refrige table td:not(.clearrow) {
+	border: solid 2px #A0A0A0;
 	padding: 3px;
 	vertical-align: top;
 }
 
-.refrige .clearrow td {
-	border: 0;
-	height: 20px;
+.refrige table td.active {
+    border: solid 2px #000;
+    background-color: #E4E4E4;
+}
+
+.refrige .eggs {
+	height: 3rem;
+}
+
+/*.refrige .eggs .active {
+	background-color: #fde9d9;
+}*/
+
+.refrige .milk-200 {
+	height: 2.5rem;
+}
+
+/*.refrige .milk-200 .active {
+	background-color: #daeef3;
+}*/
+
+.refrige .milk-400 {
+	height: 1rem;
+}
+
+/*.refrige .milk-400 .active {
+	background-color: #b1a0c7;
+}*/
+
+.refrige .softdrink {
+	height: 5rem;
+}
+
+/*.refrige .softdrink .active {
+	background-color: #948a54;
+}*/
+
+.refrige .milk-830 {
+	height: 1.3rem;
+}
+
+.refrige .water-600 {
+	height: 8rem;
 }
 
 .refrige .overlay {
@@ -73,47 +96,50 @@ table .card .expire {
 	font-weight: 400;
 	color: #000;
 	text-shadow: 0px 0px 8px #676767;
+	cursor: default;
 }
 
 .refrige .overlay.eggs-a {
-	top: 1rem;
+	top: 0;
 	font-size: 1.6rem;
+	line-height: 3rem;
 }
 
 .refrige .overlay.eggs-b {
-	top: 7rem;
+	top: 4.5rem;
 	font-size: 1.6rem;
+	line-height: 3rem;
 }
 
 .refrige .overlay.milk-200 {
-	top: 13.5rem;
-	font-size: 1.6rem;
+	top: 9.2rem;
+	font-size: 1.4rem;
 	width: 60%;
 	right: 0;
 }
 
 .refrige .overlay.milk-400 {
 	width: 40%;
-	top: 13em;
+	top: 11.5rem;
 	font-size: 1.6rem;
 }
 
 .refrige .overlay.softdrink {
 	width: 60%;
-	top: 14.4em;
+	top: 14.2rem;
 	right: 0;
 	font-size: 1.6rem;
 }
 
 .refrige .overlay.milk-830 {
 	width: 40%;
-	top: 23.2em;
-	font-size: 1.6rem;
+	top: 20.5rem;
+	font-size: 1.7rem;
 }
 
 .refrige .overlay.water-600 {
 	width: 60%;
-	top: 23.8em;
+	top: 22rem;
 	right: 0;
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 }
