@@ -13,37 +13,37 @@
 						<div class="refrige">
 							<table>
 								<tr class="eggs">
-									<td class="active"></td><td></td><td></td><td></td><td></td>
+									<td class="<?php echo $refrige['Eggs A1']; ?>" style="<?php echo $freshboxcolor['Eggs A1']; ?>"></td><td class="<?php echo $refrige['Eggs A2']; ?>" style="<?php echo $freshboxcolor['Eggs A2']; ?>"></td><td class="<?php echo $refrige['Eggs A3']; ?>" style="<?php echo $freshboxcolor['Eggs A3']; ?>"></td><td class="<?php echo $refrige['Eggs A4']; ?>" style="<?php echo $freshboxcolor['Eggs A4']; ?>"></td><td class="<?php echo $refrige['Eggs A5']; ?>" style="<?php echo $freshboxcolor['Eggs A5']; ?>"></td>
 								</tr>
 								<tr class="clearrow">
-									<td></td><td></td><td></td><td></td><td></td>
+									<td colspan="5"></td>
 								</tr>
 								<tr class="eggs">
-									<td></td><td></td><td></td><td></td><td></td>
+									<td class="<?php echo $refrige['Eggs B1']; ?>" style="<?php echo $freshboxcolor['Eggs B1']; ?>"></td><td class="<?php echo $refrige['Eggs B2']; ?>" style="<?php echo $freshboxcolor['Eggs B2']; ?>"></td><td class="<?php echo $refrige['Eggs B3']; ?>" style="<?php echo $freshboxcolor['Eggs B3']; ?>"></td><td class="<?php echo $refrige['Eggs B4']; ?>" style="<?php echo $freshboxcolor['Eggs B4']; ?>"></td><td class="<?php echo $refrige['Eggs B5']; ?>" style="<?php echo $freshboxcolor['Eggs B5']; ?>"></td>
 								</tr>
 								<tr class="clearrow">
-									<td rowspan="2"></td><td rowspan="2"></td><td></td><td></td><td></td>
+									<td rowspan="2" colspan="2"></td><td colspan="3"></td>
 								</tr>
 								<tr class="milk-200">
-									<td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
+									<td rowspan="2" class="<?php echo $refrige['Milk 200-1']; ?>" style="<?php echo $freshboxcolor['Milk 200-1']; ?>"></td><td rowspan="2" class="<?php echo $refrige['Milk 200-2']; ?>" style="<?php echo $freshboxcolor['Milk 200-2']; ?>"></td><td rowspan="2" class="<?php echo $refrige['Milk 200-3']; ?>" style="<?php echo $freshboxcolor['Milk 200-3']; ?>"></td>
 								</tr>
 								<tr class="milk-400">
-									<td rowspan="3"></td><td rowspan="3"></td>
+									<td rowspan="3" class="<?php echo $refrige['Milk 400-1']; ?>" style="<?php echo $freshboxcolor['Milk 400-1']; ?>"></td><td rowspan="3" class="<?php echo $refrige['Milk 400-2']; ?>" style="<?php echo $freshboxcolor['Milk 400-2']; ?>"></td>
 								</tr>
 								<tr class="clearrow">
-									<td></td><td></td><td></td>
+									<td colspan="3"></td>
 								</tr>
 								<tr class="softdrink">
-									<td></td><td></td><td></td>
+									<td class="<?php echo $refrige['Soft Drink 1']; ?>" style="<?php echo $freshboxcolor['Soft Drink 1']; ?>"></td><td class="<?php echo $refrige['Soft Drink 2']; ?>" style="<?php echo $freshboxcolor['Soft Drink 2']; ?>"></td><td class="<?php echo $refrige['Soft Drink 3']; ?>" style="<?php echo $freshboxcolor['Soft Drink 3']; ?>"></td>
 								</tr>
 								<tr class="clearrow">
-									<td></td><td></td><td rowspan="2"></td><td rowspan="2"></td><td rowspan="2"></td>
+									<td colspan="2"></td><td rowspan="2" colspan="3"></td>
 								</tr>
 								<tr class="milk-830">
-									<td rowspan="2"></td><td rowspan="2"></td>
+									<td rowspan="2" class="<?php echo $refrige['Milk 830-1']; ?>" style="<?php echo $freshboxcolor['Milk 830-1']; ?>"></td><td rowspan="2" class="<?php echo $refrige['Milk 830-2']; ?>" style="<?php echo $freshboxcolor['Milk 830-2']; ?>"></td>
 								</tr>
 								<tr class="water-600">
-									<td></td><td></td><td></td>
+									<td class="<?php echo $refrige['Water 600-1']; ?>" style="<?php echo $freshboxcolor['Water 600-1']; ?>"></td><td class="<?php echo $refrige['Water 600-2']; ?>" style="<?php echo $freshboxcolor['Water 600-2']; ?>"></td><td class="<?php echo $refrige['Water 600-3']; ?>" style="<?php echo $freshboxcolor['Water 600-3']; ?>"></td>
 								</tr>
 							</table>
 							<div class="overlay eggs-a">Eggs A</div>

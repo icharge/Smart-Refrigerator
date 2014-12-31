@@ -13,6 +13,13 @@ WHERE datediff(expire_date,now()) <= ".expire_day_notify."
 ORDER BY datediff(expire_date,now()) asc";
 	$expiringdata = $db->query($sql);
 
+	$refrige = array();
+	$freshboxcolor = array();
+	foreach ($expiringdata as $v) {
+		$refrige[$v['slot_name']] = "active";
+		$freshboxcolor[$v['slot_name']] = expirewarningcolor($v['expire_date']);
+	}
+
 	include template_folder . "/t_expiring.php";
 
 	$loadscript = array("datatable");

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 30, 2014 at 03:52 AM
+-- Generation Time: Dec 31, 2014 at 06:27 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -44,7 +44,8 @@ INSERT INTO `products` (`product_barcode`, `name`, `netcontent`) VALUES
 ('8850188250207', 'Foremost UHT รสหวาน', '225 ml'),
 ('8850188800198', 'Foremost Falcon', '1000 ml'),
 ('8851013781491', 'Tipco น้ำมังคุด ผสมน้ำผลไม้รวม 100%', '1000 ml'),
-('8851717040023', 'Dutch Mill 4 in 1 รสส้ม', '180 ml');
+('8851717040023', 'Dutch Mill 4 in 1 รสส้ม', '180 ml'),
+('8858891301124', 'อิชิตัน กรีนที รสน้ำผึ้งผสมมะนาว', '840 ml.');
 
 -- --------------------------------------------------------
 
@@ -74,15 +75,15 @@ INSERT INTO `slots` (`slot_barcode`, `slot_name`) VALUES
 ('EGGS10', 'Eggs B5'),
 ('FREEZER', 'Freeze'),
 ('MEAT', 'Meat'),
-('MILK01', 'Milk A1'),
-('MILK02', 'Milk A2'),
-('MILK03', 'Milk A3'),
-('MILK04', 'Milk B1'),
-('MILK05', 'Milk B2'),
-('MILK06', 'Milk B3'),
-('MILK07', 'Milk C1'),
-('MILK08', 'Milk C2'),
-('MILK09', 'Milk C3'),
+('MILK01', 'Milk 200-1'),
+('MILK02', 'Milk 200-2'),
+('MILK03', 'Milk 200-3'),
+('MILK04', 'Milk 400-1'),
+('MILK05', 'Milk 400-2'),
+('MILK06', 'Milk 400-3'),
+('MILK07', 'Milk 830-1'),
+('MILK08', 'Milk 830-2'),
+('MILK09', 'Milk 830-3'),
 ('OTHER1', 'Other 1'),
 ('OTHER2', 'Other 2'),
 ('OTHER3', 'Other 3'),
@@ -111,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `slot_detail` (
 --
 
 INSERT INTO `slot_detail` (`slot_barcode`, `product_barcode`, `expire_date`) VALUES
-('EGGS01', '2000000355429', '2015-01-01'),
+('EGGS01', '2000000355429', '2014-12-28'),
 ('MILK01', '8850188242103', '2015-01-03'),
 ('MILK02', '8850188250207', '2015-01-04'),
 ('MILK03', '8851013781491', '2015-01-15');

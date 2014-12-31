@@ -5,7 +5,7 @@
 	$header['subtitle'] = "ตู้เย็นช่วยเตือนคุณภาพอาหาร";
 	include template_folder . "/t_header.php";
 	# จำนวนสินค้าทั้งหมดในตู้เย็น
-	$sql = "SELECT COUNT( product_barcode ) AS count FROM products";
+	$sql = "SELECT COUNT( product_barcode ) AS count FROM slot_detail";
 	$allprdcount = $db->query_row($sql);
 	$allprdcount = $allprdcount['count'];
 
