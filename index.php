@@ -9,12 +9,7 @@
 	$allprdcount = $db->query_row($sql);
 	$allprdcount = $allprdcount['count'];
 
-	# จำนวนสินค้าที่ใกล้หมดอายุ
-	$sql = "SELECT COUNT( expire_date ) as count
-					FROM slot_detail
-					WHERE datediff(expire_date,now()) < ".expire_day_notify;
-	$expiringcount = $db->query_row($sql);
-	$expiringcount = $expiringcount['count'];
+
 
 
 	include template_folder . "/t_main.php";

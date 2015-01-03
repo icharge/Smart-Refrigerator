@@ -1,4 +1,5 @@
 <!--content-->
+<?php $noti = "";?>
 	<div class="container documents">
 		<div class="row">
 			<div class="col-sm-6">
