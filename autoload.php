@@ -20,7 +20,6 @@ include("functions.php");
 	$expiredcount = $expiredcount['count'];
 
 	$nearexpire = (int)$expiringcount - (int)$expiredcount;
-	$noti = "ขณะนี้มี ";
-	if ($nearexpire > 0) $noti .= "$expiredcount รายการที่หมดอายุแล้ว<br>";
-	$noti .= "และอีก $nearexpire รายการที่กำลังจะหมดอายุ";
+	if ($expiredcount > 0) $noti .= "หมดอายุแล้ว $expiredcount รายการ<br>";
+	if ($nearexpire > 0) $noti .= "กำลังจะหมดอายุ $nearexpire รายการ";
 	

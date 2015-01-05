@@ -6,8 +6,38 @@
 				<!-- ส่วนหุ้ม ตู้เย็น -->
 				<div class="jumbotron">
 					<!-- ฝั่งซ้าย -->
-					<div class="col-xs-6">
-						
+					<div class="col-xs-6" style="padding-left: 0">
+						<div class="refrige">
+							<table>
+								<tr class="freeze">
+									<td></td>
+								</tr>
+								<tr class="clearrow">
+									<td></td>
+								</tr>
+								<tr class="other1">
+									<td></td>
+								</tr>
+								<tr class="meat">
+									<td></td>
+								</tr>
+								<tr class="other2">
+									<td></td>
+								</tr>
+								<tr class="other2">
+									<td></td>
+								</tr>
+								<tr class="vegetable">
+									<td></td>
+								</tr>
+							</table>
+							<div class="overlay freeze">Freeze</div>
+							<div class="overlay other1">Other</div>
+							<div class="overlay meat">Meat</div>
+							<div class="overlay other2">Other</div>
+							<div class="overlay other3">Other</div>
+							<div class="overlay vegetable">Vegetable</div>
+						</div>
 					</div>
 					<!-- ฝั่งขวา -->
 					<div class="col-xs-6" style="padding-right: 0">

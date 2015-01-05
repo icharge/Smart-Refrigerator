@@ -88,6 +88,26 @@ table .card .expire {
 	height: 8rem;
 }
 
+.refrige .freeze {
+	height: 6rem;
+}
+
+.refrige .other1 {
+	height: 2.5rem;
+}
+
+.refrige .other2 {
+	height: 4rem;
+}
+
+.refrige .meat {
+	height: 4.8rem;
+}
+
+.refrige .vegetable {
+	height: 7rem;
+}
+
 .refrige .overlay {
 	width: 100%;
 	display: block;
@@ -141,5 +161,41 @@ table .card .expire {
 	width: 60%;
 	top: 22rem;
 	right: 0;
+	font-size: 1.7rem;
+}
+
+.refrige .overlay.freeze {
+	width: 100%;
+	top: 2rem;
+	font-size: 1.7rem;
+}
+
+.refrige .overlay.other1 {
+	width: 100%;
+	top: 7.6rem;
+	font-size: 1.7rem;
+}
+
+.refrige .overlay.other2 {
+	width: 100%;
+	top: 15.7rem;
+	font-size: 1.7rem;
+}
+
+.refrige .overlay.other3 {
+	width: 100%;
+	top: 19.7rem;
+	font-size: 1.7rem;
+}
+
+.refrige .overlay.meat {
+	width: 100%;
+	top: 11.3rem;
+	font-size: 1.7rem;
+}
+
+.refrige .overlay.vegetable {
+	width: 100%;
+	top: 25rem;
 	font-size: 1.7rem;
 }
