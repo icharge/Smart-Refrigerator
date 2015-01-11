@@ -26,14 +26,16 @@
 			$product_name = $proddata['name'];
 			$product_netcontent = $proddata['netcontent'];
 			$product_expiredate = $proddata['expire_date'];
-			$product_expiredate = date("d/m/Y", strtotime($proddata['expire_date']));
+			list($y, $m, $d) = explode("-", $product_expiredate);
+			$product_expiredate = "$d/$m/$y";
 			include template_folder . "/t_eachproduct.php";
 			break;
 
 		case 'edit':
 			$barcode_prd = $_GET['product'];
 			$barcode_slot = $_GET['slot'];
-			$expire_date = date("Y-m-d", strtotime($_POST['expire_date']));
+			list($d, $m, $y) = explode("/", $_POST['expire_date']);
+			$expire_date = "$y-$m-$d";
 			$sql = "UPDATE slot_detail SET expire_date = '$expire_date'
 				WHERE slot_barcode = '$barcode_slot' AND product_barcode = '$barcode_prd' ";
 			$db->query_row($sql);

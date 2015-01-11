@@ -1,5 +1,6 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/site.min.js"></script>
  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 	<script type="text/javascript" src="js/bootstrap-datepicker.th.js"></script>
@@ -67,6 +68,6 @@
 		}
 	}
 ?>
-		<script type="text/javascript" src="js/site.min.js"></script>
+		
 	</body>
 </html>
