@@ -6,13 +6,14 @@ require_once("config.php");
 include("db.php");
 include("functions.php");
 
-	# จำนวนสินค้าที่ใกล้หมดอายุ
+	# จำนวนสินค้าที่ใกล้ และหมดอายุแล้ว
 	$sql = "SELECT COUNT( expire_date ) as count
 					FROM slot_detail
 					WHERE datediff(expire_date,now()) < ".expire_day_notify;
 	$expiringcount = $db->query_row($sql);
 	$expiringcount = $expiringcount['count'];
 
+	# จำนวนสินค้าที่หมดอายุแล้ว
 	$sql = "SELECT COUNT( expire_date ) as count
 					FROM slot_detail
 					WHERE datediff(expire_date,now()) <= 0";

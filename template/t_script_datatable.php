@@ -4,7 +4,7 @@
 <script type="text/javascript">
 	$(function() {
 		'use strict';
-		$('#newtable').dataTable({
+		$('#newtable').DataTable({
 			"bPaginate": true,
 			"bLengthChange": false,
 			"bFilter": false,
@@ -18,21 +18,6 @@
 				"infoEmpty": "ไม่มีข้อมูล",
 				"infoFiltered": "กรองข้อมูลแล้วจากทั้งหมด _MAX_"
 			},
-		});
-
-		$('body').delegate('tr[href]', 'tap', function(e){
-			var click = e.which;
-			var url = $(this).attr('href');
-			if(url){
-				if(click <= 1){
-					window.location.href = url;
-				}
-				else if(click == 2){
-					window.open(url, '_blank');
-					window.focus();
-				}
-				return true;
-			}
 		});
 		
 	});

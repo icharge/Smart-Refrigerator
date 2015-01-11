@@ -9,7 +9,7 @@
 			<div class="col-sm-6">
 				<div class="panel panel-success">
 					<div class="panel-heading">รายการของในตู้เย็น</div>
-						<table id="newtable" class="table table-hover" stryle="font-size: 12px">
+						<table id="newtable" class="table table-hover rowclick" stryle="font-size: 12px">
 							<thead>
 								<tr>
 									<th style="white-space: nowrap;"><i class="glyphicon glyphicon-barcode"></i> ตำแหน่ง</th>
@@ -21,7 +21,7 @@
 							<tbody>
 <?php
 	foreach ($itemsdata as $row) {
-		echo "<tr>
+		echo "<tr href=\"inrefrig.php?view&product=$row[product_barcode]&slot=$row[slot_barcode]\">
 			<td>$row[slot_barcode]</td>
 			<td class='hidden-xs'>$row[product_barcode]</td>
 			<td>$row[name]</td>
