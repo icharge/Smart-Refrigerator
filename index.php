@@ -9,9 +9,6 @@
 	$allprdcount = $db->query_row($sql);
 	$allprdcount = $allprdcount['count'];
 
-
-
-
 	include template_folder . "/t_main.php";
 	include template_folder . "/t_footer.php";
 

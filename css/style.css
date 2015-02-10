@@ -37,10 +37,17 @@ table .card .expire {
 	border-right: 0!important;
 }
 
+.refrige .clearrow2 td {
+	height: 3rem;
+}
+
+.refrige .clearcell {
+	height: 1.5rem;
+}
+
 .refrige table td:not(.clearrow) {
 	border: solid 2px #A0A0A0;
 	padding: 3px;
-	vertical-align: top;
 }
 
 .refrige table td.active {
@@ -48,154 +55,56 @@ table .card .expire {
     background-color: #E4E4E4;
 }
 
-.refrige .eggs {
-	height: 3rem;
+.refrige td {
+	vertical-align: middle;
+	text-align: center;
 }
-
-/*.refrige .eggs .active {
-	background-color: #fde9d9;
-}*/
-
-.refrige .milk-200 {
-	height: 2.5rem;
-}
-
-/*.refrige .milk-200 .active {
-	background-color: #daeef3;
-}*/
-
-.refrige .milk-400 {
-	height: 1rem;
-}
-
-/*.refrige .milk-400 .active {
-	background-color: #b1a0c7;
-}*/
-
-.refrige .softdrink {
-	height: 5rem;
-}
-
-/*.refrige .softdrink .active {
-	background-color: #948a54;
-}*/
-
-.refrige .milk-830 {
-	height: 1.3rem;
-}
-
-.refrige .water-600 {
-	height: 8rem;
-}
-
-.refrige .freeze {
-	height: 6rem;
-}
-
-.refrige .other1 {
-	height: 2.5rem;
-}
-
-.refrige .other2 {
+.refrige .row1 {
 	height: 4rem;
 }
 
-.refrige .meat {
-	height: 4.8rem;
+.refrige .C td:not(.clearcell) {
+	height: 6rem;
 }
 
-.refrige .vegetable {
+.refrige .Dright {
 	height: 7rem;
 }
 
-.refrige .overlay {
-	width: 100%;
-	display: block;
-	position: absolute;
-	text-align: center;
-	font-weight: 400;
-	color: #000;
-	text-shadow: 0px 0px 8px #676767;
-	cursor: default;
+.refrige .E {
+	height: 19rem;
 }
 
-.refrige .overlay.eggs-a {
-	top: 0;
-	font-size: 1.6rem;
-	line-height: 3rem;
+.refrige table {
+	height: 100%;
+}
+.refrige table.Eright td{
+	border-top: solid 2px #fff;
+	border-bottom: solid 2px #fff;
+}
+.refrige table.Eright td:first-child {
+	border-left: solid 2px #fff;
+}
+.refrige table.Eright td:last-child {
+	border-right: solid 2px #fff;
 }
 
-.refrige .overlay.eggs-b {
-	top: 4.5rem;
-	font-size: 1.6rem;
-	line-height: 3rem;
+.refrige .freeze {
+	height: 9.5rem;
 }
 
-.refrige .overlay.milk-200 {
-	top: 9.2rem;
-	font-size: 1.4rem;
-	width: 60%;
-	right: 0;
+.refrige .other1 {
+	height: 7rem;
 }
 
-.refrige .overlay.milk-400 {
-	width: 40%;
-	top: 11.5rem;
-	font-size: 1.6rem;
+.refrige .other2 {
+	height: 6rem;
 }
 
-.refrige .overlay.softdrink {
-	width: 60%;
-	top: 14.2rem;
-	right: 0;
-	font-size: 1.6rem;
+.refrige .meat {
+	height: 5rem;
 }
 
-.refrige .overlay.milk-830 {
-	width: 40%;
-	top: 20.5rem;
-	font-size: 1.7rem;
-}
-
-.refrige .overlay.water-600 {
-	width: 60%;
-	top: 22rem;
-	right: 0;
-	font-size: 1.7rem;
-}
-
-.refrige .overlay.freeze {
-	width: 100%;
-	top: 2rem;
-	font-size: 1.7rem;
-}
-
-.refrige .overlay.other1 {
-	width: 100%;
-	top: 7.6rem;
-	font-size: 1.7rem;
-}
-
-.refrige .overlay.other2 {
-	width: 100%;
-	top: 15.7rem;
-	font-size: 1.7rem;
-}
-
-.refrige .overlay.other3 {
-	width: 100%;
-	top: 19.7rem;
-	font-size: 1.7rem;
-}
-
-.refrige .overlay.meat {
-	width: 100%;
-	top: 11.3rem;
-	font-size: 1.7rem;
-}
-
-.refrige .overlay.vegetable {
-	width: 100%;
-	top: 25rem;
-	font-size: 1.7rem;
+.refrige .vegetable {
+	height: 12rem;
 }

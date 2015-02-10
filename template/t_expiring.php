@@ -10,80 +10,85 @@
 						<div class="refrige">
 							<table>
 								<tr class="freeze">
-									<td></td>
+									<td class="<?php echo $refrige['FREEZE'];?>" style="<?php echo $freshboxcolor['FREEZE'];?>">FREEZE</td>
 								</tr>
 								<tr class="clearrow">
 									<td></td>
 								</tr>
-								<tr class="other1">
+								<tr class="clearrow2">
 									<td></td>
 								</tr>
 								<tr class="meat">
-									<td></td>
+									<td class="<?php echo $refrige['MEAT'];?>" style="<?php echo $freshboxcolor['MEAT'];?>">MEAT</td>
 								</tr>
 								<tr class="other2">
-									<td></td>
+									<td class="<?php echo $refrige['OTHER1'];?>" style="<?php echo $freshboxcolor['OTHER1'];?>">OTHER1</td>
 								</tr>
 								<tr class="other2">
-									<td></td>
+									<td class="<?php echo $refrige['OTHER2'];?>" style="<?php echo $freshboxcolor['OTHER2'];?>">OTHER2</td>
 								</tr>
 								<tr class="vegetable">
-									<td></td>
+									<td class="<?php echo $refrige['VEGETABLE'];?>" style="<?php echo $freshboxcolor['VEGETABLE'];?>">VEGETABLE</td>
 								</tr>
 							</table>
-							<div class="overlay freeze">Freeze</div>
-							<div class="overlay other1">Other</div>
-							<div class="overlay meat">Meat</div>
-							<div class="overlay other2">Other</div>
-							<div class="overlay other3">Other</div>
-							<div class="overlay vegetable">Vegetable</div>
 						</div>
 					</div>
 					<!-- ฝั่งขวา -->
 					<div class="col-xs-6" style="padding-right: 0">
 						<div class="refrige">
 							<table>
-								<tr class="eggs">
-									<td class="<?php echo $refrige['Eggs A1']; ?>" style="<?php echo $freshboxcolor['Eggs A1']; ?>"></td><td class="<?php echo $refrige['Eggs A2']; ?>" style="<?php echo $freshboxcolor['Eggs A2']; ?>"></td><td class="<?php echo $refrige['Eggs A3']; ?>" style="<?php echo $freshboxcolor['Eggs A3']; ?>"></td><td class="<?php echo $refrige['Eggs A4']; ?>" style="<?php echo $freshboxcolor['Eggs A4']; ?>"></td><td class="<?php echo $refrige['Eggs A5']; ?>" style="<?php echo $freshboxcolor['Eggs A5']; ?>"></td>
+								<tr class="row1">
+									<td class="<?php echo $refrige['A1'];?>" style="<?php echo $freshboxcolor['A1'];?>">A1</td>
+									<td class="<?php echo $refrige['A2'];?>" style="<?php echo $freshboxcolor['A2'];?>">A2</td>
+									<td class="<?php echo $refrige['A3'];?>" style="<?php echo $freshboxcolor['A3'];?>">A3</td>
+									<td class="<?php echo $refrige['A4'];?>" style="<?php echo $freshboxcolor['A4'];?>">A4</td>
+									<td class="<?php echo $refrige['A5'];?>" style="<?php echo $freshboxcolor['A5'];?>">A5</td>
+									<td class="<?php echo $refrige['A6'];?>" style="<?php echo $freshboxcolor['A6'];?>">A6</td>
+									<td class="<?php echo $refrige['A7'];?>" style="<?php echo $freshboxcolor['A7'];?>">A7</td>
 								</tr>
-								<tr class="clearrow">
-									<td colspan="5"></td>
+								<tr class="row1">
+									<td class="<?php echo $refrige['B1'];?>" style="<?php echo $freshboxcolor['B1'];?>">B1</td>
+									<td class="<?php echo $refrige['B2'];?>" style="<?php echo $freshboxcolor['B2'];?>">B2</td>
+									<td class="<?php echo $refrige['B3'];?>" style="<?php echo $freshboxcolor['B3'];?>">B3</td>
+									<td class="<?php echo $refrige['B4'];?>" style="<?php echo $freshboxcolor['B4'];?>">B4</td>
+									<td class="<?php echo $refrige['B5'];?>" style="<?php echo $freshboxcolor['B5'];?>">B5</td>
+									<td class="<?php echo $refrige['B6'];?>" style="<?php echo $freshboxcolor['B6'];?>">B6</td>
+									<td class="<?php echo $refrige['B7'];?>" style="<?php echo $freshboxcolor['B7'];?>">B7</td>
 								</tr>
-								<tr class="eggs">
-									<td class="<?php echo $refrige['Eggs B1']; ?>" style="<?php echo $freshboxcolor['Eggs B1']; ?>"></td><td class="<?php echo $refrige['Eggs B2']; ?>" style="<?php echo $freshboxcolor['Eggs B2']; ?>"></td><td class="<?php echo $refrige['Eggs B3']; ?>" style="<?php echo $freshboxcolor['Eggs B3']; ?>"></td><td class="<?php echo $refrige['Eggs B4']; ?>" style="<?php echo $freshboxcolor['Eggs B4']; ?>"></td><td class="<?php echo $refrige['Eggs B5']; ?>" style="<?php echo $freshboxcolor['Eggs B5']; ?>"></td>
+								<tr class="C">
+									<td colspan="4" class="clearcell"></td>
+									<td rowspan="2" class="<?php echo $refrige['C1'];?>" style="<?php echo $freshboxcolor['C1'];?>">C1</td>
+									<td rowspan="2" class="<?php echo $refrige['C2'];?>" style="<?php echo $freshboxcolor['C2'];?>">C2</td>
+									<td rowspan="2" class="<?php echo $refrige['C3'];?>" style="<?php echo $freshboxcolor['C3'];?>">C3</td>
 								</tr>
-								<tr class="clearrow">
-									<td rowspan="2" colspan="2"></td><td colspan="3"></td>
-								</tr>
-								<tr class="milk-200">
-									<td rowspan="2" class="<?php echo $refrige['Milk 200-1']; ?>" style="<?php echo $freshboxcolor['Milk 200-1']; ?>"></td><td rowspan="2" class="<?php echo $refrige['Milk 200-2']; ?>" style="<?php echo $freshboxcolor['Milk 200-2']; ?>"></td><td rowspan="2" class="<?php echo $refrige['Milk 200-3']; ?>" style="<?php echo $freshboxcolor['Milk 200-3']; ?>"></td>
-								</tr>
-								<tr class="milk-400">
-									<td rowspan="3" class="<?php echo $refrige['Milk 400-1']; ?>" style="<?php echo $freshboxcolor['Milk 400-1']; ?>"></td><td rowspan="3" class="<?php echo $refrige['Milk 400-2']; ?>" style="<?php echo $freshboxcolor['Milk 400-2']; ?>"></td>
+								<tr class="D">
+									<td colspan="2" rowspan="3" class="<?php echo $refrige['D1'];?>" style="<?php echo $freshboxcolor['D1'];?>">D1</td>
+									<td colspan="2" rowspan="3" class="<?php echo $refrige['D2'];?>" style="<?php echo $freshboxcolor['D2'];?>">D2</td>
 								</tr>
 								<tr class="clearrow">
 									<td colspan="3"></td>
 								</tr>
-								<tr class="softdrink">
-									<td class="<?php echo $refrige['Soft Drink 1']; ?>" style="<?php echo $freshboxcolor['Soft Drink 1']; ?>"></td><td class="<?php echo $refrige['Soft Drink 2']; ?>" style="<?php echo $freshboxcolor['Soft Drink 2']; ?>"></td><td class="<?php echo $refrige['Soft Drink 3']; ?>" style="<?php echo $freshboxcolor['Soft Drink 3']; ?>"></td>
+								<tr class="Dright">
+									<td class="<?php echo $refrige['D3'];?>" style="<?php echo $freshboxcolor['D3'];?>">D3</td>
+									<td class="<?php echo $refrige['D4'];?>" style="<?php echo $freshboxcolor['D4'];?>">D4</td>
+									<td class="<?php echo $refrige['D5'];?>" style="<?php echo $freshboxcolor['D5'];?>">D5</td>
 								</tr>
 								<tr class="clearrow">
-									<td colspan="2"></td><td rowspan="2" colspan="3"></td>
+									<td colspan="7"></td>
 								</tr>
-								<tr class="milk-830">
-									<td rowspan="2" class="<?php echo $refrige['Milk 830-1']; ?>" style="<?php echo $freshboxcolor['Milk 830-1']; ?>"></td><td rowspan="2" class="<?php echo $refrige['Milk 830-2']; ?>" style="<?php echo $freshboxcolor['Milk 830-2']; ?>"></td>
-								</tr>
-								<tr class="water-600">
-									<td class="<?php echo $refrige['Water 600-1']; ?>" style="<?php echo $freshboxcolor['Water 600-1']; ?>"></td><td class="<?php echo $refrige['Water 600-2']; ?>" style="<?php echo $freshboxcolor['Water 600-2']; ?>"></td><td class="<?php echo $refrige['Water 600-3']; ?>" style="<?php echo $freshboxcolor['Water 600-3']; ?>"></td>
+								<tr class="E">
+									<td colspan="2" class="<?php echo $refrige['E1'];?>" style="<?php echo $freshboxcolor['E1'];?>">E1</td>
+									<td colspan="2" class="<?php echo $refrige['E2'];?>" style="<?php echo $freshboxcolor['E2'];?>">E2</td>
+									<td colspan="3" style="padding: 0">
+										<table class="Eright">
+											<tr>
+												<td class="<?php echo $refrige['E3'];?>" style="<?php echo $freshboxcolor['E3'];?>">E3</td>
+												<td class="<?php echo $refrige['E4'];?>" style="<?php echo $freshboxcolor['E4'];?>">E4</td>
+											</tr>
+										</table>
+									</td>
 								</tr>
 							</table>
-							<div class="overlay eggs-a">Eggs A</div>
-							<div class="overlay eggs-b">Eggs B</div>
-							<div class="overlay milk-200">Milk 200 ml.</div>
-							<div class="overlay milk-400">Milk 400 ml.</div>
-							<div class="overlay softdrink">Soft Drink 325 ml.</div>
-							<div class="overlay milk-830">Milk 830 ml.</div>
-							<div class="overlay water-600">Water 600 ml.</div>
 						</div>
 					</div>
 					<div class="clearfix"></div>
