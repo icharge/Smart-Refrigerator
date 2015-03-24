@@ -24,7 +24,7 @@ function sendEmail($content) {
 	$mail->AddAddress("charge_n@hotmail.com", "Name"); // to Address
 
 
-	$mail->Subject = "Smart Refrigerator"; 
+	$mail->Subject = EMAIL_SUBJECT; 
 	$mail->Body = $content;
 
 	if (!$mail->Send()) {

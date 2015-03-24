@@ -8,3 +8,6 @@
 // Program
 	define("template_folder","template");
 	define("expire_day_notify","10");
+
+// Email
+	define("EMAIL_SUBJECT","แจ้งเตือน การหมดอายุ " . date('d/m/Y'));

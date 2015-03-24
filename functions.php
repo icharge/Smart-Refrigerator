@@ -67,10 +67,13 @@
 		elseif ($countday == -1) $txt = "หมดอายุแล้ว เมื่อวาน";
 		else {
 			$countday *= -1;
-			$txt = "หมดอายุแล้ว $countday วัน";
+			$txt = "หมดอายุเมื่อ ". Date2Buddish($date) ." ผ่านมา $countday วัน";
 		}
 
 		return $txt;
 	}
 
-
+	function Date2Buddish($date) {
+		list($y, $m, $d) = explode('-', $date);
+		return "$d/$m/$y";
+	}

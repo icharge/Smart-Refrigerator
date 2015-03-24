@@ -10,11 +10,14 @@ LEFT JOIN products p on p.product_barcode = sd.product_barcode
 WHERE datediff(expire_date,now()) <= ".expire_day_notify."
 ORDER BY datediff(expire_date,now()) asc";
 	$expiringdata = $db->query($sql);
+	if (count($expiringdata) == 0) {
+		die("Nothing to send.");
+	}
 
 	$refrige = array();
 	$freshboxcolor = array();
 
-	$html = "<h1>รายการเตือนการหมดอายุ</h1>";
+	$html = "<h1>รายการเตือนการหมดอายุ</h1><h3>".date('d/m/Y')."</h3>";
 	$html .= '<table border="1">
 						 <tr>
 						 	<th>รหัสสินค้า</th>
@@ -36,6 +39,7 @@ ORDER BY datediff(expire_date,now()) asc";
 
 	}
 	$html .= "</table>";
+	//die($html);
 
 	if (sendEmail($html)) {
 		echo "Mail sent !.";
