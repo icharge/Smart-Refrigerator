@@ -1,10 +1,12 @@
 <!-- DATA TABES SCRIPT -->
 <script src="js/datatables/jquery.dataTables.js" type="text/javascript"></script>
 <script src="js/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="js/datatables/ellipses.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(function() {
 		'use strict';
 		$('#newtable').DataTable({
+                        "sPaginationType": "ellipses",
 			"bPaginate": true,
 			"bLengthChange": false,
 			"bFilter": false,
