@@ -47,7 +47,7 @@
 	# ----------------
 
 	function expirewarningcolor($date) {
-		$countday = DateDiff(date('Y-m-d'), $date);
+		$countday = floor(DateDiff(date('Y-m-d'), $date));
 		if ($countday >= 10) $color = "#E6E9ED";
 		elseif ($countday >= 8) $color = "#AAB2BD";
 		elseif ($countday >= 6) $color = "#FFCE54";
@@ -60,7 +60,7 @@
 	}
 
 	function expireremain($date) {
-		$countday = DateDiff(date('Y-m-d'), $date);
+		$countday = floor(DateDiff(date('Y-m-d'), $date));
 		if ($countday >= 2) $txt = "จะหมดอายุอีก $countday วัน";
 		elseif ($countday == 1) $txt = "จะหมดอายุ พรุ่งนี้";
 		elseif ($countday == 0) $txt = "จะหมดอายุ วันนี้";
