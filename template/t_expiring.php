@@ -100,7 +100,7 @@
         <div class="col-sm-6">
             <div class="panel panel-danger">
                 <div class="panel-heading">รายการของใกล้หมดอายุ</div>
-                <table id="newtable" class="table table-hover" stryle="font-size: 12px">
+                <table id="newtable2" class="table table-hover" stryle="font-size: 12px">
                     <thead class="hidden">
                         <tr>
                             <th style="white-space: nowrap;"><i class="glyphicon glyphicon-barcode"></i> ตำแหน่ง</th>
@@ -111,20 +111,23 @@
                     </thead>
                     <tbody>
                         <?php
-                        foreach ($expiringdata as $row) {
-                            $colornoti = expirewarningcolor($row['expire_date']);
-                            $expiretext = expireremain($row['expire_date']);
-                            echo "<tr style='$colornoti'>
-			<td colspan='4'>
-				<div class='card'>
-					<span class='title'>$row[product_barcode]</span><span>$row[name]</span>
-				</div>
-				<div class='card'>
-					<span>$row[slot_barcode] ($row[slot_name]) | เพิ่มเมื่อ ".DateTime2Buddish($row[insert_date])."</span><span class='expire'>$expiretext</span>
-				</div>
-
-			</td>
-		</tr>";
+                        if ($expiringdata) {
+                            foreach ($expiringdata as $row) {
+                                $colornoti = expirewarningcolor($row['expire_date']);
+                                $expiretext = expireremain($row['expire_date']);
+                                echo "<tr style='$colornoti'>
+                                        <td colspan='4'>
+                                            <div class='card'>
+                                                <span class='title'>$row[product_barcode]</span><span>$row[name]</span>
+                                            </div>
+                                            <div class='card'>
+                                                <span>$row[slot_barcode] ($row[slot_name]) | เพิ่มเมื่อ " . DateTime2Buddish($row[insert_date]) . "</span><span class='expire'>$expiretext</span>
+                                            </div>
+                                        </td>
+                                    </tr>";
+                            }
+                        } else {
+                            echo "<tr><td colspan='4'>ไม่พบสินค้าใกล้หมดอายุ หรือสินค้าที่กำลังจะหมดอายุภายใน " . expire_day_notify . " วัน</td></tr>";
                         }
                         ?>
                     </tbody>
