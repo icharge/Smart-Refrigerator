@@ -15,7 +15,7 @@ switch (key($_GET)) {
         $formact = "inrefrig.php?edit&product=$barcode_prd&slot=$barcode_slot";
         $btnsubmit = "บันทึกข้อมูล";
 
-        $sql = "SELECT sd.slot_barcode,slot_name,sd.product_barcode,name,netcontent,expire_date 
+        $sql = "SELECT sd.slot_barcode,slot_name,sd.product_barcode,name,netcontent,expire_date,insert_date 
 				FROM slot_detail sd
 				LEFT JOIN slots s on s.slot_barcode = sd.slot_barcode
 				LEFT JOIN products p on p.product_barcode = sd.product_barcode 
@@ -29,6 +29,9 @@ switch (key($_GET)) {
         $product_expiredate = $proddata['expire_date'];
         list($y, $m, $d) = explode("-", $product_expiredate);
         $product_expiredate = "$d/$m/$y";
+        $product_insertdate = $proddata['insert_date'];
+        list($y, $m, $d) = explode("-", $product_insertdate);
+        $product_insertdate = "$d/$m/$y";
         include template_folder . "/t_eachproduct.php";
         break;
 
@@ -44,7 +47,7 @@ switch (key($_GET)) {
         break;
 
     default:
-        $sql = "SELECT sd.slot_barcode, slot_name, sd.product_barcode, name,expire_date, 
+        $sql = "SELECT sd.slot_barcode, slot_name, sd.product_barcode, name,expire_date, insert_date,
 				datediff(expire_date,now()) as countexpire
 				FROM slot_detail sd
 				LEFT JOIN slots s on s.slot_barcode = sd.slot_barcode

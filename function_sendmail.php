@@ -15,13 +15,13 @@ function sendEmail($content) {
 
 	$mail->Host = "smtp.gmail.com"; // sets GMAIL as the SMTP server
 	$mail->Port = 587; // set the SMTP port for the GMAIL server
-	$mail->Username = "xxxx@gmail.com"; // GMAIL username
-	$mail->Password = 'password'; // GMAIL password
+	$mail->Username = "smartref.mu@gmail.com"; // GMAIL username
+	$mail->Password = 'root1234'; // GMAIL password
 	// =======================================================
 	$mail->SetFrom($mail->Username); // From
 	//$mail->AddReplyTo = "support@xxxx.com"; // Reply
 	$mail->FromName = "Smart Refrigerator";  // set from Name
-	$mail->AddAddress("xxxxx", "xxxxx"); // to Address
+	$mail->AddAddress("parimprimmm@gmail.com", "Prim"); // to Address
 
 
 	$mail->Subject = EMAIL_SUBJECT; 
