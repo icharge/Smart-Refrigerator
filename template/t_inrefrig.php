@@ -104,6 +104,7 @@
                             <th style="white-space: nowrap;"><i class="glyphicon glyphicon-barcode"></i> ตำแหน่ง</th>
                             <th style="white-space: nowrap;" class="hidden-xs" style="width: 68px"><i class="glyphicon glyphicon-barcode"></i> สินค้า</th>
                             <th style="white-space: nowrap;">ชื่อสินค้า</th>
+                            <th style="white-space: nowrap;">วันซื้อสินค้า</th>
                             <th style="white-space: nowrap;">วันหมดอายุ</th>
                         </tr>
                     </thead>
@@ -114,6 +115,7 @@
 			<td>$row[slot_barcode] ($row[slot_name])</td>
 			<td class='hidden-xs'>$row[product_barcode]</td>
 			<td>$row[name]</td>
+            <td>" . Date2Buddish($row['insert_date']) . "</td>
 			<td>" . Date2Buddish($row['expire_date']) . "</td>
 		</tr>";
                         }

@@ -21,6 +21,10 @@
 							<span class="input-group-addon"><i class="glyphicon glyphicon-inbox"></i></span>
 							<input type="text" class="form-control" name="productnet" placeholder="ปริมาณสุทธิ" value="<?php echo (isset($product_netcontent)?$product_netcontent:''); ?>" disabled>
 						</div>
+							<div class="form-group input-group <?php echo form_error('insert_date') ?>">
+							<span class="input-group-addon"><i class="glyphicon glyphicon-inbox"></i></span>
+							<input type="text" class="form-control" id="insert_date" name="insert_date" placeholder="วันซื้อสินค้า" value="<?php echo (isset($product_insertdate)?$product_insertdate:''); ?>" disabled>
+						</div>
 						<div class="form-group input-group <?php echo form_error('expire_date') ?>">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-inbox"></i></span>
 							<input type="text" class="form-control" id="expire_date" name="expire_date" placeholder="วันหมดอายุ" value="<?php echo (isset($product_expiredate)?$product_expiredate:''); ?>">
