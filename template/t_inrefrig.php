@@ -111,11 +111,11 @@
                     <tbody>
                         <?php
                         foreach ($itemsdata as $row) {
-                            echo "<tr href=\"inrefrig.php?view&product=$row[product_barcode]&slot=$row[slot_barcode]\">
+                            echo "<tr href=\"inrefrig.php?view=$row[id]\">
 			<td>$row[slot_barcode] ($row[slot_name])</td>
 			<td class='hidden-xs'>$row[product_barcode]</td>
 			<td>$row[name]</td>
-            <td>" . Date2Buddish($row['insert_date']) . "</td>
+            <td>" . DateTime2Buddish($row['insert_date'], '<br>') . "</td>
 			<td>" . Date2Buddish($row['expire_date']) . "</td>
 		</tr>";
                         }
