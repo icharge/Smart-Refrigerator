@@ -113,12 +113,6 @@
                         <?php
                         foreach ($expiringdata as $row) {
                             $colornoti = expirewarningcolor($row['expire_date']);
-                            /* echo "<tr style='$colornoti'>
-                              <td>$row[slot_barcode]</td>
-                              <td class='hidden-xs'>$row[product_barcode]</td>
-                              <td>$row[name]</td>
-                              <td>$row[expire_date]</td>
-                              </tr>"; */
                             $expiretext = expireremain($row['expire_date']);
                             echo "<tr style='$colornoti'>
 			<td colspan='4'>
@@ -126,7 +120,7 @@
 					<span class='title'>$row[product_barcode]</span><span>$row[name]</span>
 				</div>
 				<div class='card'>
-					<span>$row[slot_barcode] ($row[slot_name])</span><span class='expire'>$expiretext</span>
+					<span>$row[slot_barcode] ($row[slot_name]) | เพิ่มเมื่อ ".DateTime2Buddish($row[insert_date])."</span><span class='expire'>$expiretext</span>
 				</div>
 
 			</td>

@@ -4,7 +4,7 @@
 	$header['title'] = "ใกล้หมดอายุ";
 	include template_folder . "/t_header.php";
 
-	$sql = "SELECT sd.slot_barcode, slot_name, sd.product_barcode, name,expire_date, 
+	$sql = "SELECT sd.slot_barcode, slot_name, sd.product_barcode, name,expire_date, insert_date,
 datediff(expire_date,now()) as countexpire
 FROM slot_detail sd
 LEFT JOIN slots s on s.slot_barcode = sd.slot_barcode
