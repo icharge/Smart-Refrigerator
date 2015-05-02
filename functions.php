@@ -8,16 +8,12 @@ function redirect($dest) {
 }
 
 function form_validation($data) {
-    $isError = false;
+    $isNotError = true;
     foreach ($data as $item) {
         if ($item != '')
-            $isError = true;
+            $isNotError = false;
     }
-
-    if ($isError)
-        return false;
-    else
-        return true;
+    return isNotError;
 }
 
 function form_check($text) {
