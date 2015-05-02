@@ -7,8 +7,6 @@ include template_folder . "/t_header.php";
 
 switch (key($_GET)) {
     case 'view':
-        $header['title'] = "ดูสินค้า $barcode_prd";
-        $header['subtitle'] = "ชั้นวาง $barcode_slot";
         $id = $_GET['view'];
 
         $formact = "inrefrig.php?edit=$id";
@@ -26,9 +24,7 @@ switch (key($_GET)) {
         $slot_barcode = $proddata['slot_barcode'];
         $product_name = $proddata['name'];
         $product_netcontent = $proddata['netcontent'];
-        $product_expiredate = $proddata['expire_date'];
-        list($y, $m, $d) = explode("-", $product_expiredate);
-        $product_expiredate = "$d/$m/$y";
+        $product_expiredate = Date2Buddish($proddata['expire_date']);
         $product_insertdate = DateTime2Buddish($proddata['insert_date']);
         include template_folder . "/t_eachproduct.php";
         break;
