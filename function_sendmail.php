@@ -24,7 +24,7 @@ function sendEmail($content) {
 	$mail->AddAddress("parimprimmm@gmail.com", "Prim"); // to Address
 
 
-	$mail->Subject = EMAIL_SUBJECT; 
+	$mail->Subject = "แจ้งเตือน การหมดอายุ " . date('d/m/Y'); 
 	$mail->Body = $content;
 
 	if (!$mail->Send()) {
