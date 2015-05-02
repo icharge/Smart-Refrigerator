@@ -61,7 +61,7 @@
 			return $result;
 		}
 		// function Update
-		public function ppdate() {
+		public function update() {
 				$update = "UPDATE $this->Table SET  $this->Set WHERE $this->Where ";
 				return @mysql_query($update);
 		}
